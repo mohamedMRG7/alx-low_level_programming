@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 /**
 * main - Entry point
 *
@@ -7,7 +7,9 @@
 */
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\"
-			- Dora Korpar, 2015-10-19\n");
+
+	char s1[100] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	fprintf(stderr, "%s", s1);
+
 	return (1);
 }
