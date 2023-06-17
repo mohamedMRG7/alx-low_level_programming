@@ -12,12 +12,13 @@
 int main(void)
 {
 	int i;
+	int s;
 
 	for (i = 97; i <= 122 ; i++)
 	{
 		putchar(i);
 		if (i == 122)
-			for (int s = 65; s <= 90; s++)
+			for (s = 65; s <= 90; s++)
 			{
 				putchar(s);
 				if (s == 90)
