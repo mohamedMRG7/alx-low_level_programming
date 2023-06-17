@@ -17,7 +17,7 @@ int main(void)
 	{
 		putchar(i);
 		if (i == 122)
-			putchar("\n");
+			putchar(10);
 	}
 	return (0);
 }
