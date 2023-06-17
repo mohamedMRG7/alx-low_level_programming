@@ -21,7 +21,7 @@ int main(void)
 			for (s = 97; s <= 102; s++)
 			{
 				putchar(s);
-				if (s == 90)
+				if (s == 102)
 				{
 					putchar(10);
 				}
