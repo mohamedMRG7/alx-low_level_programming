@@ -12,6 +12,10 @@
  */
 int main(void)
 {
-	_putchar("_putchar");
+	int c[] = "_putchar";
+	int i;
+
+	for (i = 0; i < sizeof(c); i++)
+		_putchar("_putchar");
 	return (0);
 }
