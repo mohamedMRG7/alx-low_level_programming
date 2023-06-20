@@ -6,9 +6,9 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - Entry point
+ * print_alphabet - print alphabit
  *
- * Return: Always 0 (Success)
+ * Void
  */
 void print_alphabet(void)
 {
