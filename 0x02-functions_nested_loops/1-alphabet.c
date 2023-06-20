@@ -12,7 +12,7 @@
  */
 void print_alphabet(void)
 {
-	char c[] = "abcdfghijklmnoprstuvwxyz\n";
+	char c[] = "abcdefghijklmnopqrstuvwxyz\n";
 	int i;
 
 	for (i = 0; i < 25; i++)
