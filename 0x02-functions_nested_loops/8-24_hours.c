@@ -17,6 +17,8 @@ void jack_bauer(void)
 	{
 		for (minute = 0; minute < 60; minute++)
 		{
+			if (minute < 10)
+				_putchar('0');
 			_putchar("0" + hour);
 			_putchar(':');
 			_putchar("0" + minute);
