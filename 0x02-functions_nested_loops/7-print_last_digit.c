@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 #include "main.h"
+#include <limits.h>
 /* more headers goes there */
 /* betty style doc for function main goes there */
 /**
