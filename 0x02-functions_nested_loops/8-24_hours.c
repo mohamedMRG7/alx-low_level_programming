@@ -22,7 +22,7 @@ void jack_bauer(void)
 			_putchar(':');
 			if (minute < 10)
 				_putchar('0');
-			_putchar(minute);
+			printf("%d",minute);
 			_putchar('\n');
 		}
 	}
