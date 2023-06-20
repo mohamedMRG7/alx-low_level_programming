@@ -10,7 +10,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	char c[] = "abcdfghijklmnoprstuvwxyz\n";
 	int i;
@@ -19,5 +19,4 @@ int main(void)
 	{
 		_putchar(c[i]);
 	}
-	return (0);
 }
