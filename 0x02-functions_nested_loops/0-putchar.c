@@ -16,6 +16,13 @@ int main(void)
 	int i;
 
 	for (i = 0; i < 9; i++)
+	{
 		_putchar(c[i]);
+		if( i == 8)
+		{
+			putchar(10);
+		}
+	}
+	
 	return (0);
 }
