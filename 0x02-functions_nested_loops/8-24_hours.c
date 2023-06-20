@@ -18,11 +18,11 @@ void jack_bauer(void)
 		for (minute = 0; minute < 60; minute++)
 		{	if(hour < 10)
 				_putchar('0');
-			printf("%d",hour);
+			_putchar('0' + hour);
 			_putchar(':');
 			if (minute < 10)
 				_putchar('0');
-			printf("%d",minute);
+			_putchar('0' + minute);
 			_putchar('\n');
 		}
 	}
