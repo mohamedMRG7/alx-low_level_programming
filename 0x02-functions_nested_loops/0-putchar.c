@@ -13,9 +13,9 @@
 int main(void)
 {
 	char c[] = "_putchar";
-	long long unsigned int i;
+	int i;
 
-	for (i = 0; i < sizeof(c); i++)
-		_putchar("_putchar");
+	for (i = 0; i < 5; i++)
+		_putchar(c[i]);
 	return (0);
 }
