@@ -14,7 +14,7 @@ int _isupper(int c)
 	char alp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i;
 
-	for (i = 0; i < 27; i++)
+	for (i = 0; i < 53; i++)
 	{
 		if (c == alp[i])
 		{
