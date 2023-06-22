@@ -2,8 +2,6 @@
 
 /**
 * main - causes an infinite loop
-* @\n : new line
-* @\o : s
 * Return: 0
 */
 
