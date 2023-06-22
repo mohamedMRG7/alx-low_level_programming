@@ -11,5 +11,15 @@
  */
 int _isupper(int c)
 {
-	return (isupper(c));
+	char alp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
+	int i;
+
+	for (i = 0; i < 53; i++)
+	{
+		if (c == alp[i])
+		{
+			return (1);
+		}
+	}
+	return (0);
 }
