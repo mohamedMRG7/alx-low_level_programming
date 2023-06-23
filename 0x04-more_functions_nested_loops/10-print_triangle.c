@@ -27,7 +27,7 @@ void printspace(int n,int hash)
  *@n: is input
  * Return: 0 if upper or 1 if lower
  */
-void print_triangle(int size)
+void print_triangle(int n)
 {
 	int i;
 	int hash = 1;
