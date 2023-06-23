@@ -32,6 +32,6 @@ int main(void)
 		}else
 			i++;
 	}
-	printf("%ld\n",6857);
+	printf("%d\n",6857);
 	return (0);
 }
