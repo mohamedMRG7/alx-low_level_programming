@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <limits.h>
 /**
  * main - check the code
  *
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	print_triangle(5);
+	print_number(INT_MIN);
 	return (0);
 }

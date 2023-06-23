@@ -18,8 +18,6 @@ void print_number(int number)
 	int j = 0;
 	int ismin = 0;
 
-	if (number == INT_MIN)
-		number = -2147483648;
 	if (number < 0)
 	{
 		number *= -1;
