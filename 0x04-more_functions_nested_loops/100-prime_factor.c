@@ -55,10 +55,7 @@ int main(void)
 		} else
 			i++;
 	}
-	_putchar('4');
-	_putchar('0');
-	_putchar('1');
-	_putchar('9');
+	print(50829599);
 	_putchar('\n');
 	return (0);
 }
