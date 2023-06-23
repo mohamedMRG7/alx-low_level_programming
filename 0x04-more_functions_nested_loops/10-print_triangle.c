@@ -7,9 +7,10 @@
 /**
  * printspace - print alphabit
  *@n: is input
+ *@hash: is input
  * Return: 0 if upper or 1 if lower
  */
-void printspace(int n,int hash)
+void printspace(int n, int hash)
 {
 	while (n)
 	{
@@ -23,7 +24,7 @@ void printspace(int n,int hash)
 	}
 }
 /**
- * print_square - print alphabit
+ * print_triangle - print alphabit
  *@n: is input
  * Return: 0 if upper or 1 if lower
  */
@@ -36,7 +37,7 @@ void print_triangle(int n)
 	{
 		for (i = 0; i < n ; i++)
 		{
-			printspace(n-hash,hash);
+			printspace(n - hash, hash);
 			_putchar('\n');
 			hash++;
 		}
