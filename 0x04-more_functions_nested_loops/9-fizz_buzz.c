@@ -29,18 +29,6 @@ void fizz(void)
 	_putchar(' ');
 }
 /**
- * buzz - print alphabit
- * Return: 0 if upper or 1 if lower
- */
-void buzz(void)
-{
-	_putchar('B');
-	_putchar('u');
-	_putchar('z');
-	_putchar('z');
-	_putchar(' ');
-}
-/**
  * fizzbuzz - print alphabit
  * Return: 0 if upper or 1 if lower
  */
@@ -69,7 +57,14 @@ void pn(void)
 		if (i % 3 == 0 && i % 5 == 0)
 			fizzbuzz();
 		else if (i % 5 == 0)
-			buzz();
+		{
+			_putchar('B');
+			_putchar('u');
+			_putchar('z');
+			_putchar('z');
+			if (i != 100)
+				_putchar(' ');
+		}
 		else if (i % 3 == 0)
 			fizz();
 		else
