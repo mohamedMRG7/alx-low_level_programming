@@ -22,7 +22,7 @@ void printspace(int n)
  *@n: is input
  * Return: 0 if upper or 1 if lower
  */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	int i;
 
