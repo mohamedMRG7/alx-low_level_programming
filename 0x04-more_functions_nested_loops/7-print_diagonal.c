@@ -18,7 +18,7 @@ void printspace(int n)
 	}
 }
 /**
- * print_line - print alphabit
+ * print_diagonal - print alphabit
  *@n: is input
  * Return: 0 if upper or 1 if lower
  */
