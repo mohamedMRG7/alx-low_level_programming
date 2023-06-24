@@ -17,7 +17,8 @@ void print(int number)
 	int j = 0;
 	int ismin = 0;
 
-	if(number < 0){
+	if (number < 0)
+	{
 		number *= -1;
 		ismin = 1;
 	}
@@ -64,7 +65,7 @@ int main(void)
 		} else
 			i++;
 	}
-	print(-50829599);
+	print(num);
 	_putchar('\n');
 	return (0);
 }
