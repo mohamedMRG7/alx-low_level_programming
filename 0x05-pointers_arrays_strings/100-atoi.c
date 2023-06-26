@@ -8,6 +8,6 @@
 */
 int _atoi(char *s)
 {
-	s[0]='';
+	s[0]='s';
 	return (0);
 }
