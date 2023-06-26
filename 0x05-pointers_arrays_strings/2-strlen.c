@@ -2,11 +2,20 @@
 #include <stdio.h>
 
 /**
-* main - check the code
-*
+* _strlen - check the code
+*@s :s
 * Return: Always 0.
 */
-int main(void)
+int _strlen(char *s)
 {
-    return (0);
+
+	int i = 0;
+
+	while (i >= 0)
+	{
+		if (s[i] == 0)
+			break;
+		i++;
+	}
+	return (i);
 }
