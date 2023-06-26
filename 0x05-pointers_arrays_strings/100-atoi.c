@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <limits.h>
 /**
-* reset_to_98 - check the code
-* @n : n
+* _atoi - check the code
+* @s : n
 * Return: Always 0.
 */
 int _atoi(char *s)
 {
-
+	s[0]='';
 	return (0);
 }
