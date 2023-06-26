@@ -3,10 +3,14 @@
 
 /**
 * main - check the code
-*
+* @s :s
+* @d :d
 * Return: Always 0.
 */
-int main(void)
+char *_strcpy(char *d, char *s)
 {
-    return (0);
+	int i = 0;
+	while (s != '\0')
+		d[i] = s[i];
+	return (d);
 }
