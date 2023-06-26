@@ -3,8 +3,8 @@
 
 /**
 * print_array - check the code
-*@n :s
-*@a :a
+*@s :s
+*@n :a
 * Return: Always 0.
 */
 void print_array(int *s, int n)
