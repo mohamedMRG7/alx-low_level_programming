@@ -11,9 +11,9 @@ char *_strcpy(char *d, char *s)
 {
 	int i = 0;
 
-	while(d[i] != 0)
-		d[i] = 0;
-	i=0;
+	while (d[i] != 0)
+		d[i] = '';
+	i = 0;
 	while (s[i] != 0)
 	{
 		d[i] = s[i];
