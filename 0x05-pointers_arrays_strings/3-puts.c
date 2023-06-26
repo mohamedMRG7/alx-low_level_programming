@@ -2,11 +2,20 @@
 #include <stdio.h>
 
 /**
-* main - check the code
-*
+* _puts - check the code
+*@s :s
 * Return: Always 0.
 */
-int main(void)
+void _puts(char *s)
 {
-    return (0);
+
+	int i = 0;
+
+	while (i >= 0)
+	{
+		_putchar(s[i]);
+		if (s[i] == 0)
+			break;
+		i++;
+	}
 }
