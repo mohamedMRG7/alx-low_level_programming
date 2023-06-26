@@ -29,7 +29,7 @@ void rev_string(char *s)
 	int len = _strlen(s) - 1;
 	int i = 0;
 
-	while (len != i)
+	while (len > i)
 	{
 		char t = s[i];
 
