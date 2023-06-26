@@ -14,12 +14,7 @@ void print_array(int *s, int n)
 
 	while (i < n)
 	{
-		_putchar(s[i]);
-		if (i == (n - 1))
-		{
-		_putchar(',');
-		_putchar(' ');
-		}
+		printf("%d, ", s[i]);
 		i++;
 	}
 	_putchar('\n');
