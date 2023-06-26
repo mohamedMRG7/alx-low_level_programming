@@ -2,11 +2,25 @@
 #include <stdio.h>
 
 /**
-* main - check the code
-*
+* print_array - check the code
+*@n :s
+*@a :a
 * Return: Always 0.
 */
-int main(void)
+void print_array(int *s, int n)
 {
-    return (0);
+
+	int i = 0;
+
+	while (i < n)
+	{
+		_putchar(s[i]);
+		if (i == (n - 1))
+		{
+		_putchar(',');
+		_putchar(' ');
+		}
+		i++;
+	}
+	_putchar('\n');
 }
