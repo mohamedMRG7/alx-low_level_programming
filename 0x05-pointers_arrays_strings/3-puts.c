@@ -15,7 +15,10 @@ void _puts(char *s)
 	{
 		_putchar(s[i]);
 		if (s[i] == 0)
+		{
+			_putchar('\n');
 			break;
+		}
 		i++;
 	}
 }
