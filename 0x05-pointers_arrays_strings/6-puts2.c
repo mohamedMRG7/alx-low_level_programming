@@ -6,7 +6,7 @@
 *@s :s
 * Return: Always 0.
 */
-void _puts2(char *s)
+void puts2(char *s)
 {
 
 	int i = 0;
