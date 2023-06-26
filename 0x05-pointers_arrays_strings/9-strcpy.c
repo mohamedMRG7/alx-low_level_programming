@@ -14,8 +14,8 @@ char *_strcpy(char *d, char *s)
 	while (d[i] != 0)
 	{
 		d[i] = '\0';
+		i++;
 	}
-	printf("%s",d);
 	i = 0;
 	while (s[i] != 0)
 	{
