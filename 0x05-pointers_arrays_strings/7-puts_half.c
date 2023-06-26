@@ -2,11 +2,41 @@
 #include <stdio.h>
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-*/
-int main(void)
+ * _strlen - check the code
+ *@s :s
+ * Return: Always 0.
+ */
+int _strlen(char *s)
 {
-    return (0);
+
+	int i = 0;
+
+	while (i >= 0)
+	{
+		if (s[i] == 0)
+			break;
+		i++;
+	}
+	return (i);
+}
+/**
+ * puts_half - check the code
+ *@s :s
+ * Return: Always 0.
+ */
+void puts_half(char *s)
+{
+	int len = _strlen(s);
+	int i = 0;
+
+	if (len % 2 == 0)
+		i /= 2;
+	else
+		i = (len - 1) / 2;
+	while (s[i] != 0)
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	_putchar('\n');
 }
