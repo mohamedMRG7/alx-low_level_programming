@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
-* main - check the code
-*
+* _strcat - check the code
+* @dest :dest
+* @src :src
 * Return: Always 0.
 */
 char *_strcat(char *dest, char *src)
@@ -11,6 +12,7 @@ char *_strcat(char *dest, char *src)
 	int num = 0;
 	int i = 0;
 	int n = 0;
+
 	while (dest[num] != '\0')
 		num++;
 	i = num;
@@ -21,5 +23,5 @@ char *_strcat(char *dest, char *src)
 		n++;
 	}
 	dest[i] = '\0';
-    return (dest);
+    	return (dest);
 }
