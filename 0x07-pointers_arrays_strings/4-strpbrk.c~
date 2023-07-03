@@ -1,0 +1,37 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+/**
+* _strpbrk - check the code
+* @a :s
+* Return: Always 0.
+*/
+char *_strpbrk(char *s, char *a)
+{
+	int i = 0;
+	int r = 0;
+	char *res = malloc((strlen(s) + 1) * sizeof(char));
+	int z = 0;
+	int valid = 0;
+
+	while (s[i] != '\0')
+	{
+	        z = 0;
+		valid = 0;
+		while (a[z] != '\0')
+		{
+			if (s[i] == a[z])
+				valid = 1;
+		}
+		if (valid || r > 0)
+		{
+			res[r] = s[i];
+			r++;
+		}
+		i++;
+	}
+	if (r == 0)
+		return (NULL);
+	return (res);
+}
