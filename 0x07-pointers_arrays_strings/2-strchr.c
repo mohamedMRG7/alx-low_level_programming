@@ -6,7 +6,6 @@
 * _strchr - check the code
 * @s :s
 * @c :b
-* @n :n
 * Return: Always 0.
 */
 char *_strchr(char *s, char c)
