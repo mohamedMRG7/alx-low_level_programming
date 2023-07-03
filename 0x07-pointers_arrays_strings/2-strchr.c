@@ -23,5 +23,7 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
+	if (r == 0)
+		return NULL;
 	return (res);
 }
