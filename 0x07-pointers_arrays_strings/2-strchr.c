@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
+#include <stdlib.h>
 /**
 * _strchr - check the code
 * @s :s
@@ -10,17 +11,18 @@
 */
 char *_strchr(char *s, char c)
 {
-	int i;
-	char *res;
-	int rescount = 0;
+	int i = 0;
+	int r = 0;
+	char *res = malloc((strlen(s) + 1) * sizeof(char));
 
 	while (s[i] != '\0')
 	{
-		if (s[i] == c || rescount > 0)
+		if (s[i] == c || r > 0)
 		{
-			res[rescount] = s[i];
-			rescount++;
+			res[r] = s[i];
+			r++;
 		}
+		i++;
 	}
 	return (res);
 }
