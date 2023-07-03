@@ -6,7 +6,16 @@
 *
 * Return: Always 0.
 */
-int main(void)
+int _strcmp(char *s1, char *s2)
 {
-    return (0);
+	int sum;
+	int i = 0;
+
+	while (s1[i] != '\0' || s2[i] != '\0')
+	{
+		sum += (s1[i] - s2[i]);
+		printf("%d : ",(s1[i] - s2[i]));
+		i++;
+	}
+    return (sum);
 }
