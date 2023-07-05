@@ -1,0 +1,2 @@
+#!/bash/bin
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main.c ${1} -o res
