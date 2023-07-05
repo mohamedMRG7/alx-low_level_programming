@@ -1,31 +1,18 @@
-#include "main.h"
 #include <stdio.h>
 
+int _sqrt_recursion(int);
+
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int n;
+	int r;
 
-	n = _strlen_recursion("Corbin Coleman");
-	printf("%d\n", n);
-	return (0);
-}#include "main.h"
-#include <stdio.h>
 
- /**
-  * main - check the code
-  *
-  * Return: Always 0.
-  */
-int main(void)
-{
-	int n;
-
-	n = _strlen_recursion("Corbin Coleman");
-	printf("%d\n", n);
+	r = _sqrt_recursion(16777216);
+	printf("%d\n", r);
 	return (0);
 }
