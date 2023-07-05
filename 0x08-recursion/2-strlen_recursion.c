@@ -8,9 +8,9 @@
  */
 int sizef(char *c, int s)
 {
-	if(c[s] == '\0')
-		return s;
-	return sizef(c,s + 1);
+	if (c[s] == '\0')
+		return (s);
+	return (sizef(c, s + 1));
 }
 /**
 * _strlen_recursion - check the code
@@ -19,5 +19,5 @@ int sizef(char *c, int s)
 */
 int _strlen_recursion(char *s)
 {
-	return sizef(s,0);
+	return (sizef(s, 0));
 }
