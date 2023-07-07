@@ -67,21 +67,17 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 		return (0);
 	}
-	if (checkmods(num) != 0)
-		printf("%d\n", checkmods(num));
-	else
-	{
-		if (num > 25)
-			rs = (num / 25) + getmods(num % 25);
-		if (num < 25 && num > 10)
-			rs = (num / 10) + getmods(num % 10);
-		if (num > 5 && num < 10)
-			rs = (num / 5) + getmods(num % 5);
-		if (num > 2 && num < 5)
-			rs = (num / 2) + getmods(num % 2);
-		if (num == 1)
-			rs = 1;
-		printf("%d\n", rs);
-	}
+	if (num > 25)
+		rs = (num / 25) + getmods(num % 25);
+	if (num < 25 && num > 10)
+		rs = (num / 10) + getmods(num % 10);
+	if (num > 5 && num < 10)
+		rs = (num / 5) + getmods(num % 5);
+	if (num > 2 && num < 5)
+		rs = (num / 2) + getmods(num % 2);
+	if (num == 1)
+		rs = 1;
+	printf("%d\n", rs);
+
 	return (0);
 }
