@@ -33,13 +33,13 @@ int getmods(int num)
 
 	res = 0;
 	if (num >= 25)
-		res = num / 25 + num % 25;
+		res = num / 25 + (num % 25 != 0 ? getmods(num % 25) : 0);
 	else if (num >= 10 && num < 25)
-		res = num / 10 + num % 10;
+		res = num / 10 + (num % 10 != 0 ? getmods(num % 10) : 0);
 	else if (num >= 5 && num < 10)
-		res = num / 5 + num % 5;
+		res = num / 5 + (num % 5 != 0 ? getmods(num % 5) : 0);
 	else if (num >= 2 && num < 5)
-		res = num / 2 + num % 2;
+		res = num / 2 + (num % 2 != 0 ? getmods(num % 2) : 0);
 	else
 		res = 1;
 	return (res);
