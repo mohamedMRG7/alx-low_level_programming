@@ -1,6 +1,25 @@
+#include <string.h>
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * isnum - check the code
+ * @s:argc
+ * Return: Always 0.
+ */
+int isnum(char *s)
+{
+	int i;
+
+	i = 0;
+	while (i < (int)strlen(s))
+	{
+		if (!isdigit(s[i]))
+			return (0);
+		i++;
+	}
+	return (1);
+}
 /**
 * main - check the code
 * @argc:argc
@@ -15,7 +34,7 @@ int main(int argc, char *argv[])
 	mul = 0;
 	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(argv[i][0]))
+		if (!isnum(argv[i]))
 		{
 			printf("%s\n", "Error");
 			return (1);
