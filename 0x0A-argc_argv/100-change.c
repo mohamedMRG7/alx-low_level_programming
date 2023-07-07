@@ -79,6 +79,8 @@ int main(int argc, char *argv[])
 			rs = (num / 5) + getmods(num % 5);
 		if (num > 2 && num < 5)
 			rs = (num / 2) + getmods(num % 2);
+		if (num == 1)
+			rs = 1;
 		printf("%d\n", rs);
 	}
 	return (0);
