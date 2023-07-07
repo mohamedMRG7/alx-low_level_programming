@@ -18,6 +18,8 @@ int checkmods(int num)
 		res = num / 10;
 	else if (num % 5 == 0)
 		res = num / 5;
+	else if (num % 2 == 0)
+		res = num / 2;
 	return (res);
 }
 /**
@@ -30,9 +32,18 @@ int main(int argc, char *argv[])
 {
 	int num;
 	int rs;
-	(void)argc;
+
+	if (argc < 2)
+	{
+		printf("%s\n", "Error");
+		return (1);
+	}
 	rs = 0;
 	num = atoi(argv[1]);
+	if (num < 0)
+	{
+		printf("%d\n", 0);
+	}
 	if (checkmods(num) != 0)
 		printf("%d\n", checkmods(num));
 	else
@@ -46,6 +57,9 @@ int main(int argc, char *argv[])
 		if (num > 5 && num < 10)
 			rs = (num / 5) + (checkmods(num % 5) != 0 ?
 					   checkmods(num % 5) : num % 5);
+		if (num > 2 && num < 5)
+			rs = (num / 2) + (checkmods(num % 2) != 0 ?
+					  checkmods(num % 2) : num % 2);
 		printf("%d\n", rs);
 	}
 	return (0);
