@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 	if (num < 0)
 	{
 		printf("%d\n", 0);
+		return (0);
 	}
 	if (checkmods(num) != 0)
 		printf("%d\n", checkmods(num));
