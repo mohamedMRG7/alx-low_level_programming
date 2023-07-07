@@ -23,6 +23,28 @@ int checkmods(int num)
 	return (res);
 }
 /**
+ * getmods - check the code
+ * @num:argc
+ * Return: Always 0.
+ */
+int getmods(int num)
+{
+	int res;
+
+	res = 0;
+	if (num >= 25)
+		res = num / 25 + num % 25;
+	else if (num >= 10 && num < 25)
+		res = num / 10 + num % 10;
+	else if (num >= 5 && num < 10)
+		res = num / 5 + num % 5;
+	else if (num >= 2 && num < 5)
+		res = num / 2 + num % 2;
+	else
+		res = 1;
+	return (res);
+}
+/**
 * main - check the code
 * @argc:argc
 * @argv : argv
@@ -50,17 +72,13 @@ int main(int argc, char *argv[])
 	else
 	{
 		if (num > 25)
-			rs = (num / 25) + (checkmods(num % 25) != 0 ?
-					   checkmods(num % 25) : num % 25);
+			rs = (num / 25) + getmods(num % 25);
 		if (num < 25 && num > 10)
-			rs = (num / 10) + (checkmods(num % 10) != 0 ?
-					   checkmods(num % 10) : num % 10);
+			rs = (num / 10) + getmods(num % 10);
 		if (num > 5 && num < 10)
-			rs = (num / 5) + (checkmods(num % 5) != 0 ?
-					   checkmods(num % 5) : num % 5);
+			rs = (num / 5) + getmods(num % 5);
 		if (num > 2 && num < 5)
-			rs = (num / 2) + (checkmods(num % 2) != 0 ?
-					  checkmods(num % 2) : num % 2);
+			rs = (num / 2) + getmods(num % 2);
 		printf("%d\n", rs);
 	}
 	return (0);
