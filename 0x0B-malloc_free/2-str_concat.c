@@ -11,14 +11,16 @@
 char *str_concat(char *str, char *s2)
 {
 	char *arr;
+	char empty[1];
 	int i;
 	int size;
 	int size2;
 
+	empty[0] = '\0';
 	if (str == NULL)
-		*str = '\0';
+		str = empty;
 	if (s2 == NULL)
-		*s2 = '\0';
+		s2 = empty;
 	i = 0;
 	while (str[i] != '\0')
 		i++;
@@ -27,7 +29,7 @@ char *str_concat(char *str, char *s2)
 	while (s2[i] != '\0')
 		i++;
 	size2 = i;
-	arr = malloc((sizeof(char) * size) + (sizeof(char) * size2));
+	arr = malloc((sizeof(char) * size) + (sizeof(char) * size2) + 1);
 	if (arr == NULL)
 		return (NULL);
 	for (i = 0; i < size; i++)
