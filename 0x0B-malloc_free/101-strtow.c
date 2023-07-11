@@ -39,7 +39,7 @@ char **strtow(char *str)
 			coulmn++;
 		if (str[i + 1] == ' ' || str[i + 1] == '\0')
 		{
-			arr[rows] = malloc(sizeof(char) * coulmn);
+			arr[rows] = malloc(sizeof(char *) * coulmn);
 			coulmn = 0;
 			rows++;
 		}
