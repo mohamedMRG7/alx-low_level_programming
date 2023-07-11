@@ -3,15 +3,15 @@
 #include <stdio.h>
 
 /**
-* create_array - check the code
-* @size : size
-* @c :c
+* argstostr - check the code
+* @ac : size
+* @av :c
 * Return: Always 0.
 */
 char *argstostr(int ac, char **av)
 {
 	char *arr;
-        int i;
+	int i;
 	int j;
 	int total;
 
