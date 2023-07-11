@@ -44,7 +44,7 @@ char **strtow(char *str)
 			rows++;
 		}
 	}
-	arr[rows] = malloc(sizeof(char *));
+	arr[rows] = malloc(sizeof(char *) + 14);
 	if (arr == NULL)
 	{
 		free(arr);
