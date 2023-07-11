@@ -45,7 +45,7 @@ char **strtow(char *str)
 			rows++;
 		}
 	}
-	arr[rows] = malloc(sizeof(char));
+	arr[rows] = malloc(sizeof(char*));
 	if(arr == NULL)
 	{
 		free(arr);
@@ -82,6 +82,6 @@ char **strtow(char *str)
 		}
 		coulmn = 0;
 	}
-	arr[rows][0] = '\0';
+	arr[rows] = NULL;
 	return (arr);
 }
