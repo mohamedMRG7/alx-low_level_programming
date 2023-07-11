@@ -27,11 +27,11 @@ char *argstostr(int ac, char **av)
 			j++;
 		}
 	}
-	arr = malloc(sizeof(char) * total + ac);
-	if(arr == NULL)
+	arr = malloc(sizeof(char) * total + ac + 1);
+	if (arr == NULL)
 	{
 		free(arr);
-		return NULL;
+		return (NULL);
 	}
 	total = 0;
 	for (i = 0; i < ac; i++)
