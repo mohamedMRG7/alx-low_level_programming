@@ -3,9 +3,8 @@
 #include <stdio.h>
 
 /**
-* create_array - check the code
-* @size : size
-* @c :c
+* strtow - check the code
+* @str : size
 * Return: Always 0.
 */
 char **strtow(char *str)
@@ -17,27 +16,27 @@ char **strtow(char *str)
 	int j;
 	int coulmn;
 	int isfirst;
-	
+
 	rows = 0;
 	size = 0;
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] != ' ')
-			size ++;
-		if(str[i] == ' ' && str[i + 1] != '\0' && str[i + 1] != ' ')
+			size++;
+		if (str[i] == ' ' && str[i + 1] != '\0' && str[i + 1] != ' ')
 			rows++;
 	}
-	arr = malloc(sizeof(char**) * rows + 1);
+	if (str == NULL || rows == 0)
+		return (NULL);
+	arr = malloc(sizeof(char **) * rows + 1);
 	coulmn = 0;
 	rows = 0;
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if(str[i] == ' ')
+		if (str[i] == ' ')
 			continue;
 		if (str[i] != ' ')
-		{
 			coulmn++;
-		}
 		if (str[i + 1] == ' ' || str[i + 1] == '\0')
 		{
 			arr[rows] = malloc(sizeof(char *) * coulmn);
@@ -45,11 +44,11 @@ char **strtow(char *str)
 			rows++;
 		}
 	}
-	arr[rows] = malloc(sizeof(char*));
-	if(arr == NULL)
+	arr[rows] = malloc(sizeof(char *));
+	if (arr == NULL)
 	{
 		free(arr);
-		return NULL;
+		return (NULL);
 	}
 	j = 0;
 	coulmn = 0;
@@ -58,9 +57,9 @@ char **strtow(char *str)
 	{
 		while (str[j] != '\0')
 		{
-			if(str[j] != ' ')
+			if (str[j] != ' ')
 			{
-				if(isfirst)
+				if (isfirst)
 				{
 					i = 0;
 					isfirst = 0;
@@ -69,11 +68,11 @@ char **strtow(char *str)
 				coulmn++;
 			}
 			if (str[j] == ' ' && str[j + 1] != '\0'
-			    && str[j + 1] == ' ' ){
+			    && str[j + 1] == ' '){
 				j++;
-			        continue;
+				continue;
 			}
-			if (str[j] == ' ' && str[j + 1] != ' ' )
+			if (str[j] == ' ' && str[j + 1] != ' ')
 			{
 				j++;
 				break;
