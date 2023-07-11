@@ -1,12 +1,12 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
+char **strtow(char *);
+
 /**
  * print_tab - Prints an array of string
- * @tab: The array to print
  *
- * Return: nothing
+ * @tab: The array to print
  */
 void print_tab(char **tab)
 {
@@ -19,15 +19,15 @@ void print_tab(char **tab)
 }
 
 /**
- * main - check the code for ALX School students.
+ * main - check the code .
  *
- * Return: 1 if an error occurred, 0 otherwise
+ * Return: Always 0.
  */
 int main(void)
 {
 	char **tab;
 
-	tab = strtow("      ALX School         #cisfun   ss  s  mmrg jdk  asd c  ");
+	tab = strtow("      Talk        is     cheap.       Show      me     the    code.        ");
 	if (tab == NULL)
 	{
 		printf("Failed\n");
