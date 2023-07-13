@@ -9,5 +9,5 @@
 */
 void *malloc_checked(unsigned int b)
 {
-	return (malloc(b));
+	return (malloc(b) == NULL ? malloc(b) : NULL);
 }
