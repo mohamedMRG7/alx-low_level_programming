@@ -17,6 +17,7 @@ char *string_nconcat(char *str, char *s2, unsigned int n)
 	int size;
 	int size2;
 
+	(void)n;
 	empty[0] = '\0';
 	if (str == NULL)
 		str = empty;
