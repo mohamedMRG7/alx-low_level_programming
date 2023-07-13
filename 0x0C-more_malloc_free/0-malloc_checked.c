@@ -9,5 +9,5 @@
 */
 void *malloc_checked(unsigned int b)
 {
-	return (malloc(b) == NULL ? NULL : malloc(b));
+	return (malloc(b) == NULL ? exit(98) : malloc(b));
 }
