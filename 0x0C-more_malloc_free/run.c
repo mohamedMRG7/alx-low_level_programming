@@ -11,8 +11,8 @@ int main(int argc, char **argv)
 {
 	char *concat;
 	(void)argc;
-	concat = string_nconcat("Best ", "School !!!", atoi(argv[1]));
-	printf("%s", concat);
+	concat = string_nconcat("Best ", NULL, atoi(argv[1]));
+	printf("%s\n", concat);
 	free(concat);
 	return (0);
 }
