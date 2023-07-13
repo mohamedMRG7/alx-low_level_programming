@@ -30,7 +30,6 @@ char *string_nconcat(char *str, char *s2, unsigned int n)
 	while (s2[i] != '\0')
 		i++;
 	size2 = i;
-	size2 = n;
 	arr = malloc((sizeof(char) * size) + (sizeof(char) * size2) + 1);
 	if (arr == NULL)
 		return (NULL);
