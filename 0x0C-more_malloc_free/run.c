@@ -7,12 +7,12 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int main(int argc, char **argv)
 {
 	char *concat;
-
-	concat = string_nconcat("Best ", "School !!!", 2);
-	printf("%s\n", concat);
+	(void)argc;
+	concat = string_nconcat("Best ", "School !!!", atoi(argv[1]));
+	printf("%s", concat);
 	free(concat);
 	return (0);
 }
