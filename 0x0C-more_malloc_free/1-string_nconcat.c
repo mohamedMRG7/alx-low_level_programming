@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdlib.h>
 #include "main.h"
 #include <stdio.h>
@@ -17,19 +18,15 @@ char *string_nconcat(char *str, char *s2, unsigned int n)
 	int size;
 	int size2;
 
+	size = 0;
+	size2 = 0;
 	empty[0] = '\0';
 	if (str == NULL)
 		str = empty;
 	if (s2 == NULL)
 		s2 = empty;
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	size = i;
-	i = 0;
-	while (s2[i] != '\0')
-		i++;
-	size2 = i;
+	size = strlen(str);
+	size2 = strlen(s2);
 	if ((int)n < size2)
 		size2 = (int)n;
 	arr = malloc((sizeof(char) * size) + (sizeof(char) * size2) + 1);
