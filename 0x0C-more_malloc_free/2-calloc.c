@@ -15,9 +15,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	arr = malloc(sizeof(unsigned int) * nmemb * size);
+	arr = malloc(sizeof(unsigned int) * nmemb * size + 1);
 	if (arr == NULL)
 		return (NULL);
-	memset(arr, 0, nmemb * size);
+	memset(arr, 0, nmemb * size + 1);
 	return (arr);
 }
