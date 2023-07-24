@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 	i = 0;
-	separator = " ";
+	separator = "";
 	while (format && format[i])
 	{
 		current_format = format[i];
