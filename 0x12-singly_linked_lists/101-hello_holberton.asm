@@ -21,4 +21,3 @@ _start:
 	section .bss
 	;;  Reserve some space for the printf function
 	resb 8
-	
