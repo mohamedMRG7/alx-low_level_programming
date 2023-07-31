@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
-* list_len - check the code
+* listint_len - check the code
 * @h:h
 * Return: Always 0.
 */

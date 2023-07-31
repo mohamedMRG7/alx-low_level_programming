@@ -5,9 +5,9 @@
 #include <stdio.h>
 
 /**
-* add_node_end - check the code
+* add_nodeint_end - check the code
 * @head:h
-* @str:s
+* @n:n
 * Return: Always 0.
 */
 listint_t *add_nodeint_end(listint_t **head, const int n)

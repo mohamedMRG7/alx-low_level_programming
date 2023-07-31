@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
-* free_list - check the code
+* free_listint - check the code
 * @head:h
 * Return: Always 0.
 */
