@@ -10,15 +10,14 @@
 * @str:s
 * Return: Always 0.
 */
-list_t *add_node(list_t **head, const char *str)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	list_t *node;
+	listint_t *node;
 
-	node = malloc(sizeof(list_t));
+	node = malloc(sizeof(listint_t));
 	if (node == NULL)
 		return (NULL);
-	node->str = strdup(str);
-	node->len = strlen(str);
+	node->n = n;
 	node->next = *head;
 	*head = node;
 	return (node);
