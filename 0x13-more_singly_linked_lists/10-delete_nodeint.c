@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
-* insert_nodeint_at_index - check the code
+* delete_nodeint_at_index - check the code
 * @head:h
 *@index:d
 *Return: Always 0.
