@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * flip_bits - Calculate the number of bits needed to flip to get from one number to another.
+ * flip_bits - Calculate the number of bits needed to flip to get from one 
  * @n: The first number.
  * @m: The second number.
  *
