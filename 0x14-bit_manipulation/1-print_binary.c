@@ -11,22 +11,23 @@
 */
 void print_binary(unsigned long int n)
 {
-    int shift = 63;  // Assuming 64-bit long int (change if using different size)
-    int bit;
+	int shift;
+	int bit;
 
-    if (n == 0)
-    {
-        _putchar('0');
-        return;
-    }
+	shift = 63;
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
 
-    while (!(n >> shift) && shift > 0)
-        shift--;
+	while (!(n >> shift) && shift > 0)
+		shift--;
 
-    while (shift >= 0)
-    {
-        bit = (n >> shift) & 1;
-        _putchar(bit + '0');
-        shift--;
-    }
+	while (shift >= 0)
+	{
+		bit = (n >> shift) & 1;
+		_putchar(bit + '0');
+		shift--;
+	}
 }
