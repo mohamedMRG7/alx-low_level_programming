@@ -34,16 +34,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	read_buff = read(fb, buffer, letters);
 	if (read_buff == -1)
 	{
-		close(fd);
+		close(fb);
 		return (0);
 	}
 	bytes_written = write(STDOUT_FILENO, buffer, read_buff);
 	if (bytes_written == -1)
 	{
-		close(fd);
+		close(fb);
 		return (0);
 	}
 	free(buffer);
-	close(fd);
+	close(fb);
 	return (read_buff);
 }
