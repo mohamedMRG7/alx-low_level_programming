@@ -19,13 +19,13 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	fb = open(filename, O_RDWR | O_TRUNC | O_CREAT, 0600);
+	fb = open(filename, O_RDWR | O_TRUNC | O_CREAT, 0700);
 	if (fb == -1)
 	{
 		printf("Faild to open");
 		return (-1);
 	}
-	bytes_written = write(fb, text_content, strlen(text_content));
+	bytes_written = write(fb, text_content == NULL ? "" : text_content, text_content == NULL ? 0: strlen(text_content));
 	if (bytes_written == -1)
 	{
 		printf("Faild to write");
