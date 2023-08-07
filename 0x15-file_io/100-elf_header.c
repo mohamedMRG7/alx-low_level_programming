@@ -10,8 +10,10 @@
  */
 void print_magic(unsigned char e_ident[EI_NIDENT])
 {
+	int i;
+
 	printf("  Magic:   ");
-	for (int i = 0; i < EI_NIDENT; i++)
+	for (i = 0; i < EI_NIDENT; i++)
 		printf("%02x%c", e_ident[i], i == EI_NIDENT - 1 ? '\n' : ' ');
 }
 
@@ -64,21 +66,25 @@ void print_elf_header(Elf64_Ehdr header)
 
 int main(int argc, char *argv[])
 {
+
+
+	Elf64_Ehdr header;
+	ssize_t bytes_read;
+	int fd;
+	
 	if (argc != 2)
 	{
 		dprintf(STDERR_FILENO, "Usage: %s elf_filename\n", argv[0]);
 		exit(98);
 	}
 
-	int fd = open(argv[1], O_RDONLY);
+	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Cannot open %s\n", argv[1]);
 		exit(98);
 	}
-
-	Elf64_Ehdr header;
-	ssize_t bytes_read = read(fd, &header, sizeof(header));
+	bytes_read = read(fd, &header, sizeof(header));
 	if (bytes_read != sizeof(header) || header.e_ident[EI_MAG0] != ELFMAG0 || header.e_ident[EI_MAG1] != ELFMAG1 || header.e_ident[EI_MAG2] != ELFMAG2 || header.e_ident[EI_MAG3] != ELFMAG3)
 	{
 		dprintf(STDERR_FILENO, "Error: %s is not an ELF file\n", argv[1]);
